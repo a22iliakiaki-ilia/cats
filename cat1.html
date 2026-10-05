@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>cat 1 </h2>
+    <img src="cat1.jpg" alt="" id="cat1" width="500px" height="500px">
+    <p>Clicks: <span id="clicks">0</span></p>
+    <h2>cat 2 </h2>
+    <img src="cat1.jpg" alt="" id="cat2" width="500px" height="500px">
+    <p>Clicks: <span id="clicks2">0</span></p>
+    <script>
+        let contador = 0
+        let contador2 = 0
+
+        const cat1 = document.getElementById("cat1");
+        cat1.addEventListener("click", function() {
+            contador++;
+            document.getElementById("clicks").textContent = contador;
+        });
+    </script>
+</body> 
+</html>
